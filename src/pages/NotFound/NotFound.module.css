@@ -1,0 +1,61 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+.frstN,
+.scndN,
+.thrdN {
+  font-size: 5rem;
+  display: inline-block;
+  margin: 0 8px;
+  color: #ff4d4f; /* Яскравий червоний */
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+/* Анімації */
+.frstN {
+  animation-delay: 0s;
+}
+.scndN {
+  animation-delay: 0.2s;
+}
+.thrdN {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Адаптивний розмір */
+@media (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .frstN,
+  .scndN,
+  .thrdN {
+    font-size: 4rem;
+    margin: 0 4px;
+  }
+}
