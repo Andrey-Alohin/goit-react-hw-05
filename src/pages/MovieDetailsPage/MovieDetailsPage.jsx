@@ -7,6 +7,7 @@ import Container from "../../components/Container/Container";
 import FilmCard from "../../components/FilmCard/FilmCard";
 import AdditionalInfo from "../../components/AdditionalInfo/AdditionalInfo";
 import Loader from "../../components/Loader/Loader";
+import Error from "../../components/Error/Error";
 
 function MovieDetailsPage() {
   const { movieId } = useParams();
@@ -37,7 +38,8 @@ function MovieDetailsPage() {
         <Link to={backLinkRef.current} className={css.backBtn}>
           <IoReturnUpBackOutline className={css.backIcon} /> Go back
         </Link>
-        {!isLoading ? film && <FilmCard film={film} /> <AdditionalInfo />}
+        {!isLoading && film && <FilmCard film={film} />}
+        {!isLoading && <AdditionalInfo />}
         <Loader isLoading={isLoading} />
         {isError && <Error />}
         <Suspense fallback={<Loader />}>

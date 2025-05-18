@@ -47,6 +47,10 @@
   background-color: #007bff;
   color: #ffffff;
 }
+.itemLink.active {
+  color: #007bff;
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   .list {
     flex-direction: row;

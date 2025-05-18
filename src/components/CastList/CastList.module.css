@@ -1,0 +1,19 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.castItem {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+@media (min-width: 768px) {
+  .castItem {
+    flex: 1 1 calc(25% - 1rem);
+  }
+}

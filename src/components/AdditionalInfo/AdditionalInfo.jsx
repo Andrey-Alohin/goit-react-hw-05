@@ -1,6 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import css from "./AdditionalInfo.module.css";
+import clsx from "clsx";
 
+const buildLinkClass = ({ isActive }) =>
+  clsx(css.itemLink, isActive && css.active);
 function AdditionalInfo() {
   const location = useLocation();
   return (
@@ -8,14 +11,14 @@ function AdditionalInfo() {
       <h3 className={css.title}>Additional Info</h3>
       <ul className={css.list}>
         <li className={css.item}>
-          <Link to={"cast"} state={location} className={css.itemLink}>
+          <NavLink to={"cast"} state={location} className={buildLinkClass}>
             Cast
-          </Link>
+          </NavLink>
         </li>
         <li className={css.item}>
-          <Link to={"reviews"} state={location} className={css.itemLink}>
+          <NavLink to={"reviews"} state={location} className={buildLinkClass}>
             Reviews
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>
