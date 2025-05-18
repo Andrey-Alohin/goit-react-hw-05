@@ -11,7 +11,7 @@ function MovieListItem({ movie }) {
         alt={`${movie.title} poster`}
       />
       <h3 className={css.headerMovie}>{movie.title}</h3>
-      <Link className={css.movieLink} to={`${movie.id}`}>
+      <Link className={css.movieLink} to={`/movies/${movie.id}`}>
         More details
       </Link>
     </>
