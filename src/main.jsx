@@ -5,9 +5,12 @@ import "./index.css";
 import App from "./components/App/App.jsx";
 import { BrowserRouter } from "react-router-dom";
 
+// v7_relativeSplatPath
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    >
       <App />
     </BrowserRouter>
   </StrictMode>

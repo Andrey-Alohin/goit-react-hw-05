@@ -46,6 +46,56 @@
   }
 }
 
+.linkHome {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #ff5c5c;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.linkHome:hover,
+.linkHome:focus {
+  background-color: #e14e4e;
+  transform: translateY(-2px);
+}
+
+.linkSpan {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.linkIcon {
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .linkHome {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+
+  .linkSpan {
+    font-size: 20px;
+  }
+
+  .linkIcon {
+    font-size: 26px;
+  }
+}
+
 /* Адаптивний розмір */
 @media (max-width: 768px) {
   .header {

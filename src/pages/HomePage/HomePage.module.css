@@ -1,0 +1,22 @@
+.homeSection {
+  padding: 1rem;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.homeSection h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .homeSection {
+    padding: 2rem;
+  }
+
+  .homeSection h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}

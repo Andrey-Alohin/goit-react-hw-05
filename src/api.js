@@ -15,3 +15,24 @@ export const movieDetails = async (id) => {
   const response = await axios.get(`movie/${id}`);
   return response.data;
 };
+
+export const movieCast = async (id) => {
+  const response = await axios.get(`movie/${id}/credits`);
+  return response.data;
+};
+
+export const movieReviews = async (id) => {
+  const response = await axios.get(`movie/${id}/reviews`);
+  return response.data;
+};
+
+export const movieSearch = async (userQuery) => {
+  axios.defaults.params = {};
+  const response = await axios.get("search/movie", {
+    params: {
+      query: userQuery,
+      language: "en-US",
+    },
+  });
+  return response.data;
+};

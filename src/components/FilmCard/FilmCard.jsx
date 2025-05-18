@@ -1,37 +1,34 @@
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { baseImgURL } from "../../baseUrlImg";
 import css from "./FilmCard.module.css";
+import clsx from "clsx";
 
-const baseImgUrl = "https://image.tmdb.org/t/p/original";
 function FilmCard({ film }) {
   const ratingFilm = Math.round(film.vote_average * 10);
-  const ratingColor =
-    ratingFilm < 25 ? "#db2360" : ratingFilm < 75 ? "#d2d531" : "#21d07a";
-  console.log(ratingColor);
-
   return (
     <div className={css.filmCard}>
       <img
         className={css.cardImg}
-        src={baseImgUrl + film.poster_path}
+        src={baseImgURL + film.poster_path}
         alt={`Film poster for ${film.title}`}
+        loading="lazy"
       />
       <div className={css.cardDescr}>
         <h2 className={css.descrHeader}>
-          {film.title} ({film.release_date})
+          {film.title} ({new Date(film.release_date).getFullYear()})
         </h2>
         <div className={css.descrInfo}>
-          <h3 className={css.infoTitle}></h3>
+          <h3 className={css.infoTitle}>User Rating</h3>
           <div className={css.infoRating}>
-            <CircularProgressbar
-              value={ratingFilm}
-              text={ratingFilm}
-              styles={buildStyles({
-                textColor: "#fff",
-                pathColor: ratingColor,
-                strokeLinecap: "round",
-                trailColor: "#204529",
-              })}
-            />
+            <p
+              className={clsx(
+                css.ratingText,
+                ratingFilm < 25
+                  ? css.lowRating
+                  : ratingFilm < 75
+                  ? css.medRating
+                  : css.hightRating
+              )}
+            >{`${ratingFilm}%`}</p>
           </div>
         </div>
         <div className={css.descrInfo}>

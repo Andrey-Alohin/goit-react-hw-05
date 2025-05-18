@@ -1,52 +1,51 @@
 .filmCard {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
-  padding: 24px;
-  background-color: #fff;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 32px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
 }
 
 .cardImg {
-  width: 240px;
-  height: auto;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
   border-radius: 10px;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 .cardDescr {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .descrHeader {
-  font-size: 1.8rem;
-  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
   color: #222;
+  margin: 0;
+  text-align: center;
 }
 
 .descrInfo {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .infoTitle {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
-  margin: 0;
   color: #444;
+  margin: 0;
 }
 
 .descrOverview {
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.6;
   color: #555;
   margin: 0;
@@ -55,7 +54,7 @@
 .infoGenresList {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -63,29 +62,70 @@
 
 .genreItem {
   background-color: #f0f0f0;
-  padding: 6px 12px;
   border-radius: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.genreItem:hover {
-  background-color: #ddd;
+  padding: 5px 10px;
 }
 
 .genreText {
-  margin: 0;
-  font-size: 0.95rem;
+  font-size: 14px;
   color: #333;
 }
 
 .infoRating {
-  width: 80px;
-  height: 80px;
-  background-color: #081c22;
-  border-radius: 50%;
-  padding: auto;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
   align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.ratingText {
+  margin-left: 6px;
+}
+
+/* Rating colors */
+.lowRating {
+  color: #e53935;
+}
+
+.medRating {
+  color: #fbc02d;
+}
+
+.hightRating {
+  color: #43a047;
+}
+@media (min-width: 768px) {
+  .filmCard {
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .cardImg {
+    width: 220px;
+    height: auto;
+    align-self: flex-start;
+  }
+
+  .descrHeader {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .infoTitle {
+    font-size: 18px;
+  }
+
+  .descrOverview {
+    font-size: 16px;
+  }
+
+  .genreText {
+    font-size: 15px;
+  }
+
+  .infoRating {
+    font-size: 18px;
+  }
 }
