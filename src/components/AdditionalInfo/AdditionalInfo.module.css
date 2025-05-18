@@ -48,7 +48,7 @@
   color: #ffffff;
 }
 .itemLink.active {
-  color: #007bff;
+  background-color: #0069da;
   color: #ffffff;
 }
 @media (min-width: 768px) {
