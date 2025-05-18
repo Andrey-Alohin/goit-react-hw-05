@@ -1,17 +1,61 @@
 {
-  "backdrop_path": "/qdKGpTHVaaKaFTnRynQDg4qHdEv.jpg",
-  "id": 950387,
-  "title": "A Minecraft Movie",
-  "original_title": "A Minecraft Movie",
-  "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
-  "poster_path": "/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
-  "media_type": "movie",
   "adult": false,
+  "backdrop_path": "/n4R5Ad6rwf87lmllFNuYR3io30V.jpg",
+  "belongs_to_collection": null,
+  "budget": 11000000,
+  "genres": [
+    {
+      "id": 9648,
+      "name": "Mystery"
+    },
+    {
+      "id": 53,
+      "name": "Thriller"
+    }
+  ],
+  "homepage": "https://www.dropthemovie.com",
+  "id": 1249213,
+  "imdb_id": "tt32149847",
+  "origin_country": ["US"],
   "original_language": "en",
-  "genre_ids": [10751, 35, 12, 14],
-  "popularity": 767.9151,
-  "release_date": "2025-03-31",
+  "original_title": "Drop",
+  "overview": "Violet, a widowed mother on her first date in years, arrives at an upscale restaurant where she is relieved that her date, Henry, is more charming and handsome than she expected. But their chemistry begins to curdle as Violet begins being irritated and then terrorized by a series of anonymous drops to her phone.",
+  "popularity": 65.2393,
+  "poster_path": "/dS2S5lpfgRIRQOb7LDCjNsQqKjp.jpg",
+  "production_companies": [
+    {
+      "id": 3172,
+      "logo_path": "/rzKluDcRkIwHZK2pHsiT667A2Kw.png",
+      "name": "Blumhouse Productions",
+      "origin_country": "US"
+    },
+    {
+      "id": 2481,
+      "logo_path": "/vOQg26GjR0LnkN1Ph9uyog1UuOE.png",
+      "name": "Platinum Dunes",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2025-04-10",
+  "revenue": 28355317,
+  "runtime": 95,
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "Everyone's a suspect.",
+  "title": "Drop",
   "video": false,
-  "vote_average": 6.491,
-  "vote_count": 1142
+  "vote_average": 6.528,
+  "vote_count": 319
 }
